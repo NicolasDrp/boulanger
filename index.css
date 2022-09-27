@@ -1,0 +1,92 @@
+body{
+    background-color: #c58113;
+}
+/* grid container*/
+div.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+div.container *{
+    border: solid white 1px;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-column: span 3;  
+}
+div.march{
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 3em;
+}
+/*grid items*/
+h1{
+    font-size: 5em;
+}
+nav{
+    grid-column: 1;
+    grid-row: 2;
+}
+/*figure boulangerie*/
+figure{
+    background-color: black;
+    width: 80%;
+    height:43em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+figcaption{
+    color:#c58113;
+    font-weight:bold;
+    font-size: 2em;
+}
+/*flex container*/
+div.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+    padding-top: 3em;
+}
+/*flex items*/
+div.logo a{
+    width: 23%;
+}
+div.logo a img{
+    width: 100%;
+}
+/* image*/
+img.boulangerie{
+    grid-area: Boulangeriephoto;
+    width: 92%;
+    padding-top: 2em;    
+}
+img.baguette{
+    width: 8em;
+}
+img.boulanger{
+    border: solid 1em black;
+}
+div.march img{
+    width: 80%;
+}
+/*listes*/
+ul{
+    background-color: black;
+    width: 16.6em;
+    padding-top: 1em;
+
+}
+li{
+    margin-left: 1em;
+    font-size: 1.3em;
+    list-style-image: url(img/ptitebaguette.png);
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
